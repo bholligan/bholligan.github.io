@@ -1,8 +1,8 @@
 ---
 title: "About me"
 layout: single
-excerpt: "Further information."
+author_profile: true
 permalink: /about.html
 ---
 
-Some more info.
+This website might actually be working.
