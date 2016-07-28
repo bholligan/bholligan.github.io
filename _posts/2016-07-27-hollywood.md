@@ -26,18 +26,18 @@ One feature inclusion that I debated was critical reception. I acquired and used
 
 ### Collecting Data
 "Scraping" is a term used to describe extracting data from websites. As a first time participant in this process, I was very thankful for the prebuilt tools and libraries that made the process manageable. All the data found on a website is embedded within its HTML code. Google Chrome has an incredibly handy "Inspect" feature (found via a right-click) that lets you browse through HTML and get a feel for how the site is organized. Within python there's a webscraping library called Beautiful Soup that creates Soup objects that can be quickly parsed through to isolate information. The main source of data I used was [Box Office Mojo](http://http://www.boxofficemojo.com/ "Mojo"). This site contained all of the features I was looking to acquire outside of critical recepetion. The following is the bread-and-butter of retrieving HTML from a website and converting to a Soup:  
-```python
+{% highlight rouge %}  
 response = requests.get(url) # requests a library for retrieving and reading HTML  
 page = response.text  
 soup = BeautifulSoup(page, "lxml") # BeautifulSoup stores the HTML in a soup object.  
-```  
+{% endhighlight %}  
 My process for iterating through films on the Mojo website was based on the fact that the website is built through url templates. All I needed to do was acquire unique movie title id located in each movie page's url. The process was:
 1. Get the list of genres sorted by # of movies in the genre
 2. Iterate through each genre page to get the list of top 100 films in each genre
 3. Iterate through each film's page to retrieve data for that particular film.  
   
 Data from each movie was stored in a dictionary, where the keys corresponded to eventual column names of the data frame. The biggest plight that I faced when running my script was caused by missing data leading to errors. I learned the value of error logger and try/except clauses to help identify and resolve the origin of any issues. Below is the simple error handling style I employed.  
-```python
+{% highlight rouge %} 
 try:  
 # Attempt to assign the domestic gross value.  
 # The function money_to_int cleans up the string and converts it to an integer.  
@@ -47,5 +47,5 @@ except:
 # If there's an issue retrieving the domestic gross, this will allow the script to keep running and create a record of the url that caused the issue.  
     with open('ErrorLog.txt','a') as efile:  
     efile.write('\nError domestic gross. Movie name: {}'.format(mov_url))  
-```
+{% endhighlight %}  
 
