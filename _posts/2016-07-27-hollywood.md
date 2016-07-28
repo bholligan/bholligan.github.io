@@ -1,7 +1,7 @@
 ---
 layout: splash
-title: "Linear Regression and Web Scraping"
-excerpt: ""
+title: "Analyzing the Film Industry"
+excerpt: "Practicing web scraping and linear regression."
 author_profile: false
 category: "projects"
 tags: "linear regression, metis, web scraping" 
