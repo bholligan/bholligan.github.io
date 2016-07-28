@@ -131,6 +131,7 @@ markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
 # Conversion
 markdown: kramdown
+highlighter: rogue
 lsi: false
 excerpt_separator: "\n\n"
 incremental: false
@@ -139,7 +140,6 @@ incremental: false
 # Markdown Processing
 kramdown:
   input: GFM
-  syntax_highlighter: rouge
   hard_wrap: true
   auto_ids: true
   footnote_nr: 1
