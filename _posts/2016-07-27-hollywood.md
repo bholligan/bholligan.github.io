@@ -33,9 +33,10 @@ page = response.text
 soup = BeautifulSoup(page, "lxml") # BeautifulSoup stores the HTML in a soup object.  
 ```
 My process for iterating through films on the Mojo website was based on the fact that the website is built through url templates. All I needed to do was acquire unique movie title id located in each movie page's url. The process was:
-1. Get the list of genres sorted by # of movies in the genre
-2. Iterate through each genre page to get the list of top 100 films in each genre
-3. Iterate through each film's page to retrieve data for that particular film.  
+> 1. Get the list of genres sorted by # of movies in the genre
+> 2. Iterate through each genre page to get the list of top 100 films in each genre
+> 3. Iterate through each film's page to retrieve data for that particular film.  
+
 Data from each movie was stored in a dictionary, where the keys corresponded to eventual column names of the data frame. The biggest plight that I faced when running my script was caused by missing data leading to errors. I learned the value of error logger and try/except clauses to help identify and resolve the origin of any issues. Below is the simple error handling style I employed.
 
 ```python  
