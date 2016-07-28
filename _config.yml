@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en"
-title                    : "The Dream"
+title                    : "Holligan"
 title_separator          : "-"
 name                     : "Brian Holligan"
 description              : "A place for sharing data science projects and discoveries."
