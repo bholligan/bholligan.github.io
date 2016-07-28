@@ -11,15 +11,6 @@ header:
   overlay_image: woods.jpg
 ---
 
-Outline of this post:
-
-- Goal of the project
-- Defining Success
-- Collecting Data
-- Cleaning Data
-- Features (what they are, why I wanted them) - Talk about this before regression?
-  - Revisionist history with critic scores
-
 A significant component of the curriculum at Metis is applying the skills learned in class to projects running concurrently. This post is a detailed explanation of one of the projects.
 
 ### Objective
