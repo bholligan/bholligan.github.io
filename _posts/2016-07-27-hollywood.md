@@ -11,7 +11,7 @@ header:
   overlay_image: woods.jpg
 ---
 
-A major element of the curriculum at Metis is applying the skills learned in class to projects that utilize those skills. This post is a detailed explanation of one of the projects.
+The curriculum at Metis emphasizes applying the skills learned in class to projects that demand their use. This post is a detailed explanation of one of these projects.
 
 ### Objective
 The goal of the project was to obtain film industry data and apply regression models to identify correlations and trends. The skills required to pull this off are an understanding of web scraping and basic machine learning principles. When devising a project statment, the first challenge I discovered was that the scope of the project would need to be broad. I had aspirations to look at the relative success of Pixar films, but with only 17 major releases at the time, that's simply not enough data to build a halfway decent machine learning model. In order to give myself an ample number of data points to work with, I opted to investigate whether film genre had any correlation with hollywood successs. The question now becomes, what's the best way to define success?
@@ -38,7 +38,7 @@ My process for iterating through films on the Mojo website was based on the fact
   2. Iterate through each genre page to get the list of top 100 films in each genre
   3. Iterate through each film's page to retrieve data for that particular film.  
 
-Data from each movie was stored in a dictionary, where the keys corresponded to eventual column names of the data frame. The dictionary of each movie was appended to a list with the dictionaries of all the movies. The biggest plight that I faced when running my script was caused by missing data leading to errors. I learned the value of error logger and try/except clauses to help identify and resolve the origin of any issues. Below is the simple error handling style I employed.
+Data from each movie was stored in a dictionary, where the keys corresponded to eventual column names of the data frame. The dictionary of each movie was appended to a list with the dictionaries of all the movies. The biggest plight that I faced when running my script was caused by missing data leading to errors. I learned the value of setting up an error logger and using try/except clauses to identify and resolve any issues. Below is the simple error handling style I employed.
 
 ```python  
 try:  
@@ -52,4 +52,4 @@ except:
     efile.write('\nError domestic gross. Movie name: {}'.format(mov_url))  
 ```
 
-At the ...
+The last issue to hurdle was getting timed-out by Box Office Mojo. With so many of my classmates also scraping their site, I had numerous scrape attempts get prematurely halted by HTTP request errors. My solution was to add a randomized delay in the python script, and to limit my scraping to no more than 1000 movies at a time. By the time the script was running smoothly I was already focused on getting the modelling finished, so I opted to cap my data collection at ~2200 movies from 29 different genres. The final piece of data that was not located on Mojo, critical reception, was pulled from the API of the Open Movie Database.  With all of this data loaded into a Pandas dataframe, it was time to examine the relationship between the features.
