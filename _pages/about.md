@@ -2,7 +2,8 @@
 title: "About me"
 layout: single
 header:
-  image: desert.jpeg
+  overlay_image: desert.jpeg
+  caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
 author_profile: true
 permalink: /about.html
 ---
