@@ -8,4 +8,6 @@ author_profile: true
 permalink: /about.html
 ---
 
-This website might actually be working.
+I am embarking on a data science adventure after 7 years in the oil and gas industry. This site is a home for sharing projects and the things I've learned.
+
+Outside of data science I enjoy hiking, travelling to foreign countries, live sporting events, running and ultimate.
