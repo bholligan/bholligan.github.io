@@ -13,6 +13,8 @@ header:
 
 The curriculum at Metis emphasizes applying the skills learned in class to projects that demand their use. This post is a detailed explanation of one of these projects.
 
+## Part 1
+
 ### Objective
 The goal of the project was to obtain film industry data and apply regression models to identify correlations and learn something about the industry. The skills required to execute this task are an understanding of web scraping and basic machine learning principles. When devising a problem statment, the first challenge I discovered was that the scope of the project would need to be broad. I had aspirations to look at the relative success of Pixar films, but with only 17 major releases at the time, that's simply not enough data to build a halfway decent machine learning model. In order to give myself an ample number of data points to work with, I opted to investigate whether film genre had any correlation with hollywood successs. The question now becomes, what's the best metric to rate success?
 
@@ -52,4 +54,6 @@ except:
     efile.write('\nError domestic gross. Movie name: {}'.format(mov_url))  
 ```
 
-The last issue to hurdle was getting timed-out by Box Office Mojo. With so many of my classmates also scraping their site, I had numerous scrape attempts get prematurely halted by HTTP request errors. My solution was to add a randomized delay in the python script, and to limit my scraping to no more than 1000 movies at a time. By the time the script was running smoothly I was already focused on getting the modelling finished, so I opted to cap my data collection at ~2200 movies from 29 different genres. The final piece of data, critical reception, was pulled from the API of the Open Movie Database. Once all of the data was collected and loaded into a Pandas dataframe, it was time to examine the relationship between features.
+The last issue to hurdle was getting timed-out by Box Office Mojo. With so many of my classmates also scraping their site, I had numerous scrape attempts get prematurely halted by HTTP request errors. My solution was to add a randomized delay in the python script, and to limit my scraping to no more than 1000 movies at a time. By the time the script was running smoothly I was already focused on getting the modelling finished, so I opted to cap my data collection at ~2200 movies from 29 different genres. The final piece of data, critical reception, was pulled from the API of the Open Movie Database. Once all of the data was collected and loaded into a Pandas dataframe, it was time to examine the relationship between features.  
+  
+To be continued...
