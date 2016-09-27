@@ -3,8 +3,12 @@ layout: single
 title: "Does Movie Genre Correlate to Revenue?"
 excerpt: "Using machine learning on the film industry"
 author_profile: false
-category: "projects"
-tags: "linear regression, metis, web scraping" 
+category: 
+  - projects
+tags:
+  - linear regression
+  - metis
+  - web scraping 
 header:
   overlay_color: "#000"
   overlay_filter: "0.5"
