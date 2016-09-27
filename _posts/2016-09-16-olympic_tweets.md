@@ -3,8 +3,15 @@ layout: single
 title: "NLP with Olympics Tweets"
 excerpt: "Applying topic and sentiment analysis to the closing ceremonies of the 2016 Summer Olympics."
 author_profile: false
-category: "projects"
-tags: "nlp, metis, tfidf, svd, d3, twitter" 
+categories:
+  - projects
+tags:
+  - nlp
+  - metis
+  - tfidf
+  - svd
+  - d3
+  - twitter 
 header:
   overlay_color: "#000"
   overlay_filter: "0.5"
