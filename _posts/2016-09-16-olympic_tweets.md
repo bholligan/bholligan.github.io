@@ -5,6 +5,7 @@ excerpt: "Applying topic and sentiment analysis to the closing ceremonies of the
 author_profile: false
 category: "projects"
 tags: "nlp, metis, tfidf, svd, d3, twitter" 
+bg: yellow
 header:
   overlay_color: "#000"
   overlay_filter: "0.5"
