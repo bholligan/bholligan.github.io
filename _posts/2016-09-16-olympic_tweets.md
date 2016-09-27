@@ -21,6 +21,6 @@ The result of my project is a [d3 visualization](https://bholligan.github.io/oly
 
 In summary, the pervasive negative sentiment I was expecting to see was not present during the closing ceremonies among tweeters using Rio hashtags. When aggregating tweets, generic subjects and feelings inevitability prevail, but mapping their relevance over time can provide insight about how the broad viewership is reacting. The sentiment analysis tool I used is a rudimentary system that struggled to provide value, especially when the topics themselves were defined by emotions such as "love" or "sad".
 
-Here's a link [an example](https://github.com/bholligan/olympic_NLP/blob/master/Tweet%20Text.ipynb "Notebook") to a Jupyter Notebook showing how I used TF-IDF, truncated singular value decomposition, and sentiment analysis to acquire my results.
+Here's [a link](https://github.com/bholligan/olympic_NLP/blob/master/Tweet%20Text.ipynb "Notebook") to my Jupyter Notebook showing how I used TF-IDF, truncated singular value decomposition, and sentiment analysis to acquire my results.
 
 The javascript to build the d3 visual is [here](https://github.com/bholligan/bholligan.github.io/blob/master/olympicd3/index.html "Javascript").
