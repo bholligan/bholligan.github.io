@@ -1,5 +1,5 @@
 ---
-layout: splash
+layout: single
 title: "NLP with Olympics Tweets"
 excerpt: "Applying topic and sentiment analysis to the closing ceremonies of the 2016 Summer Olympics."
 author_profile: false
