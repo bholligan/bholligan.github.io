@@ -1,5 +1,5 @@
 ---
-layout: splash
+layout: single
 title: "Does Movie Genre Correlate to Revenue?"
 excerpt: "Using machine learning on the film industry"
 author_profile: false
