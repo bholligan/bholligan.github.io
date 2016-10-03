@@ -20,7 +20,8 @@ header:
 
 At Metis we learned about natural language processing (NLP) and were given an opportunity to apply NLP concepts to a topic of our choice. With the Olympics in full swing at the time and dominating my Twitter feed, I was interested in seeing what an analysis of Olympic tweets would produce. I tend to follow comedians and sports bloggers on Twitter, and prior to this project I was inundated with jokes about Rio's unique brand of Olympic preparation that involved unfinished venues, sewage water, athlete robberies, and dead bodies washing ashore. On top of that, the time period I collected data was the final weekend that included the closing ceremonies, Usain Bolt running away with another 3 golds, USA basketball finally getting their act together, and Ryan Lochte bringing his lovable brand of public urination to Brazil. My expectation was to see the negative sentiment that populated my Twitter feed reflected among the a broader sample of Olympic-related tweets. I am aware that my Twitter experience is an echo chamber of people with similar beliefs, and I've long been intrigued to see how that compares to the greater public.  
 
-The result of my project is a [d3 visualization](https://bholligan.github.io/olympicd3/ "d3") that shows the most popular topics on Twitter during the closing ceremonies of the games and their associated sentiment. Here are a few highlights:  
+### [D3 Viz](https://bholligan.github.io/olympicd3/ "click to check it out")
+The result of my project is a d3 visualization that shows the most popular topics on Twitter during the closing ceremonies of the games and their associated sentiment. Here are a few highlights:  
 - You can clearly see when Tokyo 2020 was announced on the live broadcast and on the NBC tape-delay.
 - It was interesting to see "sad" pick up in usage towards the end of the live broadcast.
 - The laughing emoji stayed relatively constant, leading me to believe there were no particularly funny moments.
