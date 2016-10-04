@@ -21,3 +21,5 @@ For my final project at Metis I created a web app that uses convolutional neural
 To explore the app go here.  
   
 To get a high level overview of what the app does, watch the video below.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/OYvD0ljakcc" frameborder="0" allowfullscreen></iframe>
