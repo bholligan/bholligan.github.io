@@ -18,7 +18,7 @@ header:
 
 For my final project at Metis I created a web app that uses convolutional neural networks to identify images with one person in them, and then predict the clothing being worn by that person.  
   
-To explore the app go here.  
+To explore the app go [here](http://52.53.182.75/ "App").  
   
 To get a high level overview of what the app does, watch the video below.
 
